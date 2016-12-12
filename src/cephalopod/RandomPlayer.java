@@ -12,6 +12,7 @@ public class RandomPlayer extends Player {
 		this.col = col;
 	}
 	
+	
 	@Override
 	public int getX(){
 		System.out.print("\n" + name + ":\nx: ");

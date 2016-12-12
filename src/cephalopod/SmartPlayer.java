@@ -15,6 +15,7 @@ public class SmartPlayer extends Player {
 		this.col = col;
 		UDLR = new int[4];
 		totalPipCount = 0;
+	
 	}
 
 	public void setMatrix(int matrix[][]) {
