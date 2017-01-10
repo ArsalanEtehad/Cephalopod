@@ -29,9 +29,8 @@ public class GameState {
 		xPlayer.setMoveId(1);
 
 		// Y move
-		// oPlayer = new RandomPlayer(row, col); // Declaring the kind of the
-		// player
-		// oPlayer = new SmartPlayer(row,col);
+		
+		// oPlayer = new SmartPlayer(row,col); // Declaring the kind of the
 		//oPlayer = new HumanPlayer();
 		oPlayer = new RandomPlayer(row,col);
 		oPlayer.setName("oPlayer");

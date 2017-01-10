@@ -18,4 +18,4 @@ public class HumanPlayer extends Player {
 		int y = scanner.nextInt();
 		return --y;
 	}
-}
+ }
