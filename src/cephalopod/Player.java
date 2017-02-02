@@ -1,31 +1,30 @@
 package cephalopod;
 
-public class Player {
-	protected int moveId;
+public abstract class Player {
+	protected int type;
 	protected String name;
 
-	public void setName(String name){
+	public void setName(String name) {
 		this.name = name;
 	}
+
 	public void setMoveId(int moveId) {
-		this.moveId = moveId;
+		this.type = moveId;
 	}
 
 	public int getMoveId() {
-		return moveId;
+		return type;
 	}
 
-	public int getX() {
-		return (Integer) null;
-	}
+	public abstract int getX();
 
-	public int getY() {
-		return (Integer) null;
-	}
+	public abstract int getY();
 
 	public void setRange(int x, int y) {
 	}
 
 	public void availabilityReciever() {
 	}
+
+	public abstract void setBoard(Board board);
 }

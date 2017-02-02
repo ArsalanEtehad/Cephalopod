@@ -7,9 +7,10 @@ public class RandomPlayer extends Player {
 	private int col;
 	private Random rand = new Random();
 	
-	public RandomPlayer(int row,int col){
-		this.row = row;
-		this.col = col;
+	public RandomPlayer(Board mainBoard){
+		
+		this.row = mainBoard.getRow();
+		this.col = mainBoard.getCol();
 	}
 	
 	
@@ -25,5 +26,12 @@ public class RandomPlayer extends Player {
 		System.out.print("y: ");
 		int y = rand.nextInt(col);
 		return y;
+	}
+
+
+	@Override
+	public void setBoard(Board board) {
+		// TODO Auto-generated method stub
+		
 	}
 }

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class HumanPlayer extends Player {
 	private Scanner scanner = new Scanner(System.in);
-
+	
 	@Override
 	public int getX() {
 		System.out.print("\n" + name + ":\nx: ");
@@ -17,5 +17,11 @@ public class HumanPlayer extends Player {
 		System.out.print("y: ");
 		int y = scanner.nextInt();
 		return --y;
+	}
+
+	@Override
+	public void setBoard(Board board) {
+		// TODO Auto-generated method stub
+		
 	}
  }
