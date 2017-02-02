@@ -1,3 +1,11 @@
+/*
+This player updates itself via gameState class and observe the next possible moves and checks
+the opponent possible actions. The move that causes the minimum outcome for the opponent, 
+is the move that it chooses.
+*/
+
+
+
 package cephalopod;
 
 import java.util.Scanner;
